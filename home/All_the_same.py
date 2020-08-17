@@ -2,6 +2,7 @@ from typing import List, Any
 
 
 def all_the_same(elements: List[Any]) -> bool:
+    """ Description """
     return len(set(elements)) < 2
 
 

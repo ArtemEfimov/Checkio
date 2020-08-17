@@ -9,13 +9,10 @@ return the index of leftmost. Index starts from 0.
 
 
 def stone_wall(wall):
-    """
-    My solution
-
-    """
+    """ Description """
 
     wall = [x for x in wall.split('\n') if len(x) > 0]  # ['##########', '####0##0##', '00##0###00']
-    rot_wall = ['' for _ in range(len(wall[0]))]    # ['', '', '', '', '', '', '', '', '', '']
+    rot_wall = ['' for _ in range(len(wall[0]))]  # ['', '', '', '', '', '', '', '', '', '']
     for i in range(len(wall)):
         for j in range(len(wall[0])):
             rot_wall[j] += wall[i][j]  # ['##0', '##0', '###', '###', '#00', '###', '###', '#0#', '##0', '##0']
@@ -26,12 +23,6 @@ def stone_wall(wall):
 
     new_list = list(map(conv, rot_wall))
     return new_list.index(min(new_list))
-
-
-
-# def stone_wall(wall):
-#     cols = [list(i) for i in zip(*wall.strip().split("\n"))]
-#     return min((i for i in range(len(cols))), key=lambda x: cols[x].count("#"))
 
 
 if __name__ == '__main__':
@@ -62,7 +53,4 @@ if __name__ == '__main__':
 ''') == 0
 
 print("Coding complete? Click 'Check' to earn cool rewards!")
-dogs = [(1, 4), (2, 6), (11, 0)]
-
-
 

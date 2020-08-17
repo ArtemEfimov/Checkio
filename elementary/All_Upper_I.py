@@ -1,8 +1,9 @@
 """ Check if a given string has all symbols in upper case.
 If the string is empty or doesn't have any letter in it - function should return True. """
 
+
 def is_all_upper(text: str) -> bool:
-    """My solution"""
+    """ Description """
     return text == text.upper()
 
 
@@ -16,6 +17,3 @@ if __name__ == '__main__':
     assert is_all_upper('mixed UPPER and lower') == False
     assert is_all_upper('') == True
     print("Coding complete? Click 'Check' to earn cool rewards!")
-
-
-

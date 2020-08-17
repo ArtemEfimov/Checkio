@@ -8,9 +8,7 @@ Note that you can walk in 8 directions - left, right, up, down and sideways (on 
 
 
 def navigation(seaside):
-    """
-    My solution
-    """
+    """ Description """
     y, c, m, s = [0, 0], [0, 0], [0, 0], [0, 0]
     for row, _ in enumerate(seaside):
         for column, _ in enumerate(seaside[row]):
@@ -28,12 +26,6 @@ def navigation(seaside):
     distance += max(abs(y[0] - m[0]), abs(y[1] - m[1]))
     distance += max(abs(y[0] - s[0]), abs(y[1] - s[1]))
     return distance
-
-
-# def navigation(seaside):
-#     positions = {cell: (i, j) for i, row in enumerate(seaside) for j, cell in enumerate(row) if cell}
-#     x0, y0 = positions.pop('Y')
-#     return sum(max(abs(x0 - x1), abs(y0 - y1)) for x1, y1 in positions.values())
 
 
 if __name__ == '__main__':

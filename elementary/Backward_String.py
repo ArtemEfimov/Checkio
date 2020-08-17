@@ -2,11 +2,8 @@
 
 
 def backward_string(val: str) -> str:
-    """My solution"""
+    """ Description """
     return val[::-1]
-
-
-#backward_string = lambda val: val[::-1]
 
 
 if __name__ == '__main__':

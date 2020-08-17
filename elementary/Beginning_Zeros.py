@@ -1,25 +1,13 @@
+"""You have a string that consist only of digits.
+ You need to find how many zero digits ("0") are at the beginning of the given string. """
+
+
 def beginning_zeros(number: str) -> int:
-    """My solution"""
+    """ Description """
     en = enumerate(number)
     if not int(number) and len(number) > 1:
         return len(number)
     return not int(number) or next(i for i, x in en if x != '0')
-
-
-# beginning_zeros = lambda number: len(number) - len(number.lstrip('0'))
-
-#
-# from itertools import takewhile
-#
-# def beginning_zeros(num: str) -> int:
-#    return len([i for i in takewhile(lambda x: x == "0", num)])
-#
-#
-# import re
-#
-#
-# def beginning_zeros(number: str) -> int:
-#     return len(re.findall("0*", number)[0])
 
 
 if __name__ == '__main__':

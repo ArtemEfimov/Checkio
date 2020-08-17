@@ -5,18 +5,12 @@ from typing import Iterable
 
 
 def replace_first(items: list) -> Iterable:
-    """My solution"""
+    """ Description """
     if not items:
         return items
     items.append(items.pop(0))
     return items
 
-
-# def replace_first(items: list) -> list:
-#     return items[1:] + items[:1]
-
-
-# replace_first = lambda a: a[1:] + a[:1]
 
 
 if __name__ == '__main__':

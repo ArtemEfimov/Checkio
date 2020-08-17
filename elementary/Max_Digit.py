@@ -4,15 +4,8 @@
 
 
 def max_digit(number: int) -> int:
-    """My solution"""
+    """ Description """
     return number if not number else max(int(i) for i in str(number))
-
-# def max_digit(number: int) -> int:
-#     return max([int(i) for i in str(number)])
-
-# max_digit = lambda number: max([int(i) for i in str(number)])
-
-# max_digit = lambda number: int(max(str(number)))
 
 
 if __name__ == '__main__':
@@ -26,4 +19,3 @@ if __name__ == '__main__':
     assert max_digit(1) == 1
     assert max_digit(10000) == 1
     print("Coding complete? Click 'Check' to earn cool rewards!")
-

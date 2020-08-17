@@ -5,6 +5,7 @@ You have to return a corrected version, that starts with a capital letter and en
 
 
 def correct_sentence(text: str) -> str:
+    """ Description """
     return text[0].upper() + text[1:] + ("." if text[-1] != "." else "")
 
 

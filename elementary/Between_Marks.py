@@ -8,9 +8,7 @@ import re
 
 
 def between_markers(text: str, begin: str, end: str) -> str:
-    """
-        My solution
-    """
+    """ Description """
 
     pattern = r'\b[Aa]\w+'
     a = re.findall(pattern, text)
@@ -18,14 +16,6 @@ def between_markers(text: str, begin: str, end: str) -> str:
         return ' '.join(a)
     return '' if not a else a[0].lstrip(begin).rstrip(end)
 
-
-#
-# def between_markers(text: str, begin: str, end: str) -> str:
-#     """
-#         returns substring between two given markers
-#     """
-#     return text[text.index(begin) + 1:text.index(end)]
-#
 
 if __name__ == '__main__':
     print('Example:')

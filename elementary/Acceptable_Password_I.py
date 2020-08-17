@@ -7,11 +7,8 @@ The verification condition is:
 
 
 def is_acceptable_password(password: str) -> bool:
-    """My solution"""
+    """ Description """
     return len(password) > 6
-
-
-# is_acceptable_password = lambda password: len(password) > 6
 
 
 if __name__ == '__main__':

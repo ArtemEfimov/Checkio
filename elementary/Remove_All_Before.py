@@ -4,15 +4,8 @@ from typing import Iterable
 
 
 def remove_all_before(items: list, border: int) -> Iterable:
-    """My solution"""
+    """ Description """
     return items[items.index(border):] if border in items else items
-
-
-#another solution
-# from itertools import dropwhile
-#
-# def remove_all_before(items, border):
-#     return list(dropwhile(border.__ne__, items)) or items
 
 
 if __name__ == '__main__':

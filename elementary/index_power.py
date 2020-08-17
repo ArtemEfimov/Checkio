@@ -1,4 +1,5 @@
 def index_power(array, n):
+    """ Description """
     return array[n] ** n if n < len(array) else -1
 
 

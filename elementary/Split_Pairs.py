@@ -8,27 +8,9 @@ from typing import List
 
 
 def split_pairs(a: str) -> List[str]:
+    """ Description """
     return ["".join(i) for i in zip(a[::2], a[1::2] + "_")]
 
-# def split_pairs(a):
-#     # Every second character, for two characters, plus an underscore
-#     return [(a + '_')[i:i + 2] for i in range(0, len(a), 2)]
-#
-
-# def split_pairs(a: str) -> List[str]:
-#     """My solution"""
-#     return [a[i: i + 2] for i in range(0, len(a), 2)]
-
-#
-# def split_pairs(a):
-#     l = len(a)
-#     if l == 0:
-#         return []
-#     if l == 1:
-#         return [a + '_']
-#     else:
-#         return [a[:2]] + split_pairs(a[2:])
-#
 
 if __name__ == "__main__":
     assert list(split_pairs("abcd")) == ["ab", "cd"]

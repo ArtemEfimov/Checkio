@@ -1,19 +1,10 @@
 """number length"""
 
-#
-# def number_length(a: int) -> int:
-#     """My solution"""
-#     # your code here
-#     return len(str(a))
 
+def number_length(a: int) -> int:
+    """ Description """
+    return len(str(a))
 
-
-def number_length(number: int) -> int:
-    base, result = 10, 1
-    while base <= number:
-        base = (base << 3) + (base << 1)
-        result += 1
-    return result
 
 
 if __name__ == '__main__':
